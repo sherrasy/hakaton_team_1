@@ -2,14 +2,57 @@ body {
   font-size: 24px;
 }
 
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #E1D1B4;
+}
+
+.header-nav {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+
+.header-nav, .header-img, .header-menu {
+  flex: 1;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header, button {
+  margin-right: 10px;
+}
+
 header img {
 display: block;
 margin: 0 auto;
 height: 30vh;
 }
 
+.header_dropdown:hover .header_dropdown-menu {
+  display: block;
+}
+
 h1, h2{
   text-align: center;
+}
+
+.first-screen {
+  background-color: rgba(228, 243, 246, 0.41);
 }
 
 .ai-title {

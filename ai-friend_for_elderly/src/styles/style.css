@@ -94,3 +94,36 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+/*Yana's block*/
+.comm__container {
+  max-width: 95%;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+.comm__img {
+  max-width: 100%;
+}
+.text_bold {
+  font-size: 2.5rem;
+}
+.text-normal {
+  font-size: 1.1rem;
+  max-width: 80%;
+}
+.comm__container-text {
+  display: flex;
+  flex-direction: column;
+}
+.menu-first {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.menu-first-img {
+  width: 16px;
+  height: 16px;
+}
+.text-menu {
+  display: flex;
+}

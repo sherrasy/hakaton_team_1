@@ -1,0 +1,32 @@
+header img {
+display: block;
+margin: 0 auto;
+height: 15vh;
+}
+
+h1, h2{
+  text-align: center;
+}
+
+.ai-title {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+.main-photo {
+  max-width: 70%;     
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.main-photo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

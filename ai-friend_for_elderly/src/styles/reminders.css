@@ -1,0 +1,12 @@
+.reminders {
+   padding: 112px 64px;
+}
+
+.reminders__title {
+   max-width: 450px;
+   margin-bottom: 80px;
+}
+
+.reminders__item-title {
+   margin: 24px 0;
+}

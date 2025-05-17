@@ -24,7 +24,7 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
+  /* display: flex; */
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
@@ -93,4 +93,50 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.events {
+  background-color: #d9ebee;
+  display: flex;
+  flex-direction: column;
+}
+
+.events__text-topic {
+  font-size: 16px;
+  margin: 0;
+}
+
+.events__title {
+  font-size: 48px;
+  margin: 16px 0 24px 0;
+}
+
+.events__main {
+  display: flex;
+  flex-direction: column;
+  margin: 112px 64px;
+}
+
+.events__text {
+  font-size: 18px;
+  margin: 0;
+}
+
+.events__items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 64px 0;
+}
+
+.event {
+  max-width: 350px;
+}
+
+.event__image {
+  max-width: 350px;
+}
+
+.events__button {
+  align-self: flex-end;
 }

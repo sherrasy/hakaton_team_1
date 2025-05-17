@@ -1,4 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
+  --white: #fff;
+  --black: #000;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 56px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.button {
+  width: 162px;
+  padding: 12px 24px;
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.button--white {
+  width: 102px;
+  color: var(--black);
+  background-color: var(--white);
+  border: 1px solid var(--black);
+}
+
+.text--large {
+  font-weight: 18px;
+}
+
+.text--semibold {
+  font-weight: 600;
+}
+
+.text--small {
+  font-size: 14px;
+}
+
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -24,7 +76,6 @@ a:hover {
 
 body {
   margin: 0;
-  /* display: flex; */
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
@@ -94,6 +145,7 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+} */
 
 .events {
   background-color: #d9ebee;
@@ -130,11 +182,19 @@ button:focus-visible {
 }
 
 .event {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   max-width: 350px;
+  /* height: 517px; */
+  margin: 0 15px;
 }
 
 .event__image {
-  max-width: 350px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .events__button {

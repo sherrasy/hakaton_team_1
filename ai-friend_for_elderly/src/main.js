@@ -1,7 +1,8 @@
-import "./styles/style.css";
-import "./styles/normalize.css";
-import "./styles/reminders.css";
-import { setupCounter } from "./counter.js";
+import './styles/style.css'
+import './styles/normalize.css'
+import './styles/header.css'
+import './styles/reminders.css'
+import { DEFAULT_REMINDERS } from './utils/constant.js';
 
 import { DEFAULT_REMINDERS } from "./utils/constant.js";
 

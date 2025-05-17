@@ -174,7 +174,6 @@ h3 {
   flex-direction: column;
   justify-content: space-around;
   max-width: 350px;
-  /* height: 517px; */
   margin: 0 15px;
 }
 
@@ -187,4 +186,40 @@ h3 {
 
 .events__button {
   align-self: flex-end;
+}
+
+.header {
+  width: 100%;
+  background-color: #dcc8a4cc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 64px;
+}
+
+.header__menu {
+  width: 344px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.header__menu-item:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.header__logo {
+  text-align: center;
+}
+
+.header__menu-button {
+  width: 85;
+  height: 40;
+  padding-top: 8px;
+  padding-right: 20px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  gap: 8px;
+  border-width: 1px;
+  background: black;
+  color: white;
 }

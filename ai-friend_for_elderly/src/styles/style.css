@@ -127,3 +127,6 @@ button:focus-visible {
 .text-menu {
   display: flex;
 }
+.comm-button {
+  max-width: 10rem;
+}

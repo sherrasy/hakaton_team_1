@@ -1,0 +1,62 @@
+.first-screen {
+   background-color: rgba(228, 243, 246, 0.41);
+   padding: 112px 64px;
+}
+
+.title,
+.subtitle {
+   text-align: center;
+}
+
+.title {
+   padding-bottom: 24px;
+}
+
+.AI-friend {
+   padding-top: 32px;
+   display: flex;
+   gap: 16px;
+   margin-bottom: 80px;
+}
+
+.ai-title {
+   margin: 0 auto;
+   width: 50%;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.main-photo {
+   max-width: 70%;
+   margin: 0 auto;
+   padding: 20px;
+   text-align: center;
+}
+
+.main-photo img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+
+@media (max-width: 600px) {
+   .ai-title {
+      width: 90%;
+   }
+
+   h1 {
+      font-size: 1.5rem;
+   }
+
+   h2 {
+      font-size: 1rem;
+   }
+
+   .main-photo {
+      padding: 10px;
+      max-width: 90%;
+   }
+}

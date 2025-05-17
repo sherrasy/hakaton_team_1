@@ -1,24 +1,57 @@
 import './styles/style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import './styles/normalize.css'
+import './styles/reminders.css'
+import { DEFAULT_REMINDERS } from './utils/constant.js';
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more and jump
-    </p>
-  </div>
-`
+document.addEventListener('DOMContentLoaded', () => {
+  const reminderButtons = document.querySelectorAll('[data-type]');
+  const toastContainer = document.getElementById('toast-container');
+  const toastTemplate = document
+    .getElementById('toast-template')
+    .content.cloneNode(true);
 
-setupCounter(document.querySelector('#counter'))
+  if (reminderButtons) {
+    reminderButtons.forEach(button => {
+      button.addEventListener('click', handleButtonClick);
+    });
+  }
+
+  function showToast(title, message, isPersistent) {
+    const toastElement = toastTemplate.querySelector('.toast').cloneNode(true);
+    const toastTitleElement = toastElement.querySelector('.toast-title');
+    const toastMessageElement = toastElement.querySelector('.toast-message');
+    const closeButton = toastElement.querySelector('.toast-close');
+
+    toastTitleElement.textContent = title;
+    toastMessageElement.textContent = message;
+
+    closeButton.addEventListener('click', () => {
+      toastElement.remove();
+    });
+
+    toastContainer.appendChild(toastElement);
+    if (!isPersistent) {
+      setTimeout(() => {
+        toastElement.remove();
+      }, 10000);
+    }
+  }
+
+  function handleButtonClick(event) {
+    const button = event.target.closest('[data-type]');
+
+    if (button) {
+      const reminderType = button.dataset.type;
+      const reminderConfig = DEFAULT_REMINDERS[reminderType];
+
+      if (reminderConfig) {
+        const { title, description, interval, isPersistent } = reminderConfig;
+        const intervalInMilliseconds = interval;
+
+        setTimeout(() => {
+          showToast(title, description, isPersistent);
+        }, intervalInMilliseconds);
+      }
+    }
+  }
+});

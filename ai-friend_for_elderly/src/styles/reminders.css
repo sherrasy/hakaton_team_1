@@ -3,10 +3,28 @@
 }
 
 .reminders__title {
-   max-width: 450px;
+   max-width: 710px;
    margin-bottom: 80px;
+}
+
+.reminders__list {
+   display: flex;
+   gap: 48px;
+   flex-wrap: wrap;
+}
+
+.reminders__list-item {
+   /*  - 64px * 2 */
+   width: calc((100% - 48px * 2) / 3);
+   min-width: 390px;
 }
 
 .reminders__item-title {
    margin: 24px 0;
+}
+
+.reminders__item-button {
+   display: flex;
+   gap: 8px;
+   margin-top: 32px;
 }

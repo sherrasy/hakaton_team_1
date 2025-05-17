@@ -4,29 +4,31 @@ import './styles/header.css'
 import './styles/reminders.css'
 import { DEFAULT_REMINDERS } from './utils/constant.js';
 
-document.addEventListener('DOMContentLoaded', () => {
-  const reminderButtons = document.querySelectorAll('[data-type]');
-  const toastContainer = document.getElementById('toast-container');
+import { DEFAULT_REMINDERS } from "./utils/constant.js";
+
+document.addEventListener("DOMContentLoaded", () => {
+  const reminderButtons = document.querySelectorAll("[data-type]");
+  const toastContainer = document.getElementById("toast-container");
   const toastTemplate = document
-    .getElementById('toast-template')
+    .getElementById("toast-template")
     .content.cloneNode(true);
 
   if (reminderButtons) {
-    reminderButtons.forEach(button => {
-      button.addEventListener('click', handleButtonClick);
+    reminderButtons.forEach((button) => {
+      button.addEventListener("click", handleButtonClick);
     });
   }
 
   function showToast(title, message, isPersistent) {
-    const toastElement = toastTemplate.querySelector('.toast').cloneNode(true);
-    const toastTitleElement = toastElement.querySelector('.toast-title');
-    const toastMessageElement = toastElement.querySelector('.toast-message');
-    const closeButton = toastElement.querySelector('.toast-close');
+    const toastElement = toastTemplate.querySelector(".toast").cloneNode(true);
+    const toastTitleElement = toastElement.querySelector(".toast-title");
+    const toastMessageElement = toastElement.querySelector(".toast-message");
+    const closeButton = toastElement.querySelector(".toast-close");
 
     toastTitleElement.textContent = title;
     toastMessageElement.textContent = message;
 
-    closeButton.addEventListener('click', () => {
+    closeButton.addEventListener("click", () => {
       toastElement.remove();
     });
 
@@ -39,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function handleButtonClick(event) {
-    const button = event.target.closest('[data-type]');
+    const button = event.target.closest("[data-type]");
 
     if (button) {
       const reminderType = button.dataset.type;

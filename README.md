@@ -7,7 +7,7 @@
 - общаться
 - участвовать в жизни общества
 
-Посмотреть можно тут: https://sherrasy.github.io//
+Посмотреть можно тут: [https://sherrasy.github.io/hakaton_team_1/](https://sherrasy.github.io/hakaton_team_1/)
 
 ## Запуск проекта
 
@@ -17,7 +17,7 @@
     npm run dev;
 ```
 
-Приложение будет доступно по адресу `http://localhost:3000/ai-friend_for_elderly/`
+Приложение будет доступно по адресу `http://localhost:3000/hakaton_team_1`
 
 ## Идея проекта и его составляющие
 

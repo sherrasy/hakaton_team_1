@@ -43,6 +43,28 @@ margin: 0 auto;
 height: 30vh;
 }
 
+.header_dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.header-li {
+  text-decoration: none;
+  color: black;
+}
+
+.header_dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  min-width: 150px;
+  display: none;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
 .header_dropdown:hover .header_dropdown-menu {
   display: block;
 }

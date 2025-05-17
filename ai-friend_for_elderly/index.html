@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -43,7 +43,7 @@
         <h3 class="reminders__item-title">Поддержите себя в форме с нашими дружелюбными напоминаниями.</h3>
         <p class="reminders__item-text">Наши напоминания помогут вам не забыть о питье, лекарствах и прогулках.</p>
         <div class="reminders__item-button">
-          <p class="reminders__button-text">Вода</p>
+          <p class="reminders__button-text" data-type="water">Вода</p>
           <div class="reminders__button-icon">
             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -65,7 +65,7 @@
         <p class="reminders__item-text">Получайте уведомления о времени приема ваших медикаментов, чтобы оставаться
           здоровыми.</p>
         <div class="reminders__item-button">
-          <p class="reminders__button-text">Лекарства</p>
+          <p class="reminders__button-text" data-type="medicine">Лекарства</p>
           <div class="reminders__button-icon">
             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -86,7 +86,7 @@
         <h3 class="reminders__item-title">Выходите на прогулку и наслаждайтесь свежим воздухом каждый день.</h3>
         <p class="reminders__item-text">Прогулки на свежем воздухе помогут вам поддерживать активность и здоровье.</p>
         <div class="reminders__item-button">
-          <p class="reminders__button-text">Прогулка</p>
+          <p class="reminders__button-text" data-type="walk">Прогулка</p>
           <div class="reminders__button-icon">
             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -98,7 +98,127 @@
       </div>
     </div>
   </section>
+    <section class="communication">
+      <div class="comm__container">
+        <div class="comm__container-text">
+          <p class="text_bold">
+            Начните общение с вашим ИИ-другом прямо сейчас!
+          </p>
+          <p class="text-normal">
+            Поговорите с вашим ИИ-другом, который всегда готов вас выслушать.
+            Общение с ним поможет вам чувствовать себя менее одиноким и более
+            вовлечённым.
+          </p>
+          <div class="text-menu">
+            <div class="menu-first">
+              <div class="menu-first-picture">
+                <img
+                  class="menu-first-img"
+                  src="/img/communication icon.svg"
+                  alt=""
+                />
+              </div>
+              <p class="menu-first-text">
+                Нажмите кнопку, чтобы начать разговор.
+              </p>
+            </div>
+            <div class="menu-first">
+              <div class="menu-first-picture">
+                <img
+                  class="menu-first-img"
+                  src="/img/communication icon.svg"
+                  alt=""
+                />
+              </div>
+              <p class="menu-first-text">Ваш ИИ-друг всегда рядом с вами.</p>
+            </div>
+            <div class="menu-first">
+              <div class="menu-first-picture">
+                <img
+                  class="menu-first-img"
+                  src="/img/communication icon.svg"
+                  alt=""
+                />
+              </div>
+              <p class="menu-first-text">
+                Давайте общаться и делиться впечатлениями!
+              </p>
+            </div>
+          </div>
+          <button class="comm-button">Хочу поговорить</button>
+        </div>
+        <div class="comm__container-picture">
+          <img
+            class="comm__img"
+            src="/img/communication_img.jpg"
+            alt="Example img"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="events">
+    <container class="container">
+      <div class="events__main">
+        <p class="events__text-topic">Мероприятия</p>
+        <h2 class="events__title">Что интересного в городе</h2>
+        <p class="events__text">Узанй о мероприятиях для пожилых людей</p>
+        <div class="events__items">
+          <div class="event">
+            <img class="event__image" src="./src/images/event_card1.jpg" alt="culture">
+            <div>
+              background: url(./src/images/event_card1.jpg) 100% 100% no-repeat;
+              background-size: contain;
+            </div>
+            <div class="event__anons">
+              <p class="event__topic">Культура</p>
+              <p>5 мин чтения</p>
+            </div>
+            <h3>События для активного отдыха</h3>
+            <p>Не упусти возможность поучавствовать с интересных мероприятиях!</p>
+            <a href="#">Читать далее ></a>
+          </div>
 
+          <div class="event">
+            <img class="event__image" src="./src/images/event_card2.png" alt="sport"></img>
+            <div class="event__anons">
+              <p class="event__topic">Спорт</p>
+              <p>5 мин чтения</p>
+            </div>
+            <h3>Спортивные мероприятия для всех</h3>
+            <p>Присоединяйтесь к спортивным событиям в вашем районе!</p>
+            <a href="#">Читать далее ></a>
+          </div>
+
+          <div class="event">
+            <img class="event__image" src="./src/images/event_card3.jpg" alt="creation"></img>
+            <div class="event__anons">
+              <p class="event__topic">Творчество</p>
+              <p>5 мин чтения</p>
+            </div>
+            <h3>Творческие мастер-классы для пожилых</h3>
+            <p>Развивайте свои таланты на наших мастер-классах!</p>
+            <a href="#">Читать далее ></a>
+          </div>
+        </div>
+        <div class="events__button">
+          <button>Смотреть все</button>
+        </div>
+      </div>
+    </container>
+  </section>
+
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Templates -->
+    <template id="toast-template">
+      <div class="toast">
+        <div class="toast-content">
+          <h4 class="toast-title"></h4>
+          <p class="toast-message"></p>
+        </div>
+        <button class="toast-close">&times;</button>
+      </div>
+    </template>
   <script type="module" src="/src/main.js"></script>
 </body>
 

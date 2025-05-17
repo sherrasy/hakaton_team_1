@@ -37,7 +37,6 @@ h3 {
   padding: 12px 24px;
   color: var(--white);
   background-color: var(--black);
-
 }
 
 .button--white {
@@ -60,46 +59,46 @@ h3 {
 }
 
 .toast-container {
-        position: fixed; 
-        top: 20px;
-        right: 20px;
-        z-index: 1000; 
-      }
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
 
-      .toast {
-        background-color: #f9f9f9;
-        border: 1px solid #ccc;
-        padding: 15px;
-        margin-bottom: 10px;
-        border-radius: 4px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
+.toast {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-      .toast-content {
-        flex-grow: 1;
-        margin-right: 10px;
-      }
+.toast-content {
+  flex-grow: 1;
+  margin-right: 10px;
+}
 
-      .toast-title {
-        font-weight: bold;
-        margin-top: 5px;
-        margin-bottom: 5px;
-      }
+.toast-title {
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 
-      .toast-message {
-        margin: 0;
-      }
+.toast-message {
+  margin: 0;
+}
 
-      .toast-close {
-        background: none;
-        border: none;
-        color: #aaa;
-        font-size: 1.2em;
-        cursor: pointer;
-      } 
+.toast-close {
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 1.2em;
+  cursor: pointer;
+}
 
 .comm__container {
   max-width: 95%;
@@ -181,4 +180,40 @@ h3 {
 
 .events__button {
   align-self: flex-end;
+}
+
+.header {
+  width: 100%;
+  background-color: #dcc8a4cc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 64px;
+}
+
+.header__menu {
+  width: 344px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.header__menu-item:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.header__logo{
+  text-align:center;
+}
+
+.header__menu-button {
+  width: 85;
+  height: 40;
+  padding-top: 8px;
+  padding-right: 20px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  gap: 8px;
+  border-width: 1px;
+  background: black;
+  color: white;
 }

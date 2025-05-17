@@ -25,7 +25,7 @@
         <h3 class="reminders__item-title">Поддержите себя в форме с нашими дружелюбными напоминаниями.</h3>
         <p class="reminders__item-text">Наши напоминания помогут вам не забыть о питье, лекарствах и прогулках.</p>
         <div class="reminders__item-button">
-          <p class="reminders__button-text">Вода</p>
+          <p class="reminders__button-text" data-type="water">Вода</p>
           <div class="reminders__button-icon">
             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -47,7 +47,7 @@
         <p class="reminders__item-text">Получайте уведомления о времени приема ваших медикаментов, чтобы оставаться
           здоровыми.</p>
         <div class="reminders__item-button">
-          <p class="reminders__button-text">Лекарства</p>
+          <p class="reminders__button-text" data-type="medicine">Лекарства</p>
           <div class="reminders__button-icon">
             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -68,7 +68,7 @@
         <h3 class="reminders__item-title">Выходите на прогулку и наслаждайтесь свежим воздухом каждый день.</h3>
         <p class="reminders__item-text">Прогулки на свежем воздухе помогут вам поддерживать активность и здоровье.</p>
         <div class="reminders__item-button">
-          <p class="reminders__button-text">Прогулка</p>
+          <p class="reminders__button-text" data-type="walk">Прогулка</p>
           <div class="reminders__button-icon">
             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -80,7 +80,18 @@
       </div>
     </div>
   </section>
+    <div id="toast-container" class="toast-container"></div>
 
+    <!-- Templates -->
+    <template id="toast-template">
+      <div class="toast">
+        <div class="toast-content">
+          <h4 class="toast-title"></h4>
+          <p class="toast-message"></p>
+        </div>
+        <button class="toast-close">&times;</button>
+      </div>
+    </template>
   <script type="module" src="/src/main.js"></script>
 </body>
 
